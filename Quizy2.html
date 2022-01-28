@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="quizy2.js"></script>
+    <title>
+        JavaScript Quiz
+    </title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Helvetica;
+        }
+
+        #main {
+            width: 80%;
+            max-width: 950px;
+            border: 1px gray solid;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        header {
+            margin-top: 0;
+            border: 2px solid black;
+            padding: 5px;
+            height: 250px;
+            background: beige;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            width: 30px;
+            margin-left: 20px;
+        }
+
+        .submit {
+            width: 150px;
+            margin-top: 20px;
+            border: solid;
+            color: blue;
+
+        }
+
+        .submit:hover {
+            color: rgb(0, 255, 213);
+        }
+
+        .column {
+            color: black;
+            position: fixed;
+            box-sizing: border-box;
+            border-radius: 11px;
+            border: none;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color:rgba(0,0,0,0.7);
+            top: 0;
+            left: 0;
+        }
+
+        .hide {
+            display: none;
+        }
+
+
+
+        .content {position: relative;
+            background-color: #fefefe;
+            margin: 15% auto;
+            font-size: 50px;
+            color: black solid;
+            width: 70vh;
+            height: 50vh;
+            padding: 20px;
+            border: 1px;
+            border: solid black;
+            justify-content: center;
+        }
+
+        .close {position: absolute;
+            color: #aaa;
+            top:20px;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+        
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .congrats{color:red;
+                  font-size: medium;}
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>JavaScript Quiz
+            </h1>
+        </div>
+    </div>
+    <h1>World Quiz</h1>
+    <p>
+        Which is the highest mountain in the world?
+    </p>
+    <p>Where do Christians go for pilgrimmage?
+        <p>Steve Jobs found which company?
+        </p>
+        <p>which party won the United States election in 2020?</p>
+
+        <form id="form1" target="_self">
+            <h2>Which is the highest mountain in the world?</h2>
+            <label for="var_string"><input type="radio" name="question5" value="0" id="var_string" />Mount. Kilimanjaro
+            </label>
+            <label for="var_join"><input type="radio" name="question5" value="25" id="var_join" />Mount. Everest</label>
+            <label for="var_info"><input type="radio" name="question5" value="0" id="var_info" />Mount. Sanai</label>
+            <label for="var_condition"><input type="radio" name="question5" id="sub_condition" />Mount. Horeb</label>
+
+            <h2>Where do Christians go for pilgrimmage?</h2>
+            <label for="sub_string"><input type="radio" name="question6" value="0" id="sub_join" />Antactica</label>
+            <label for="sub_join"><input type="radio" name="question6" value="0" id="sub_info" />Europe</label>
+            <label for="sub_info"><input type="radio" name="question6" value="0" id="sub_info" />Germany</label>
+            <label for="sub_condition"><input type="radio" name="question6" value="25" id="sub_info" />Israel</label>
+
+            <h2>Steve Jobs found which company?</h2>
+            <label for="cat_string"><input type="radio" name="question7" value="25" id="cat_join" />Apple</label>
+            <label for="cat_info"><input type="radio" name="question7" value="0" id="cat_info" />Orange</label>
+            <label for="cat_info"><input type="radio" name="question7" value="0" id="sub_info" />Mc Donald's</label>
+            <label for="cat_codition"><input type="radio" name="question7" value="0"
+                    id="sub_condition" />Domino's</label>
+
+            <h2>Which political party won the United States Presidential election in 2020?</h2>
+            <label for="cat_string"><input type="radio" name="question8" value="0" id="cat_join" />APC</label>
+            <label for="cat_info"><input type="radio" name="question8" value="0" id="cat_info" />Congress</label>
+            <label for="cat_info"><input type="radio" name="question8" value="25" id="sub_info" />Democrat</label>
+            <label for="cat_codition"><input type="radio" name="question8" value="0"
+                    id="sub_condition" />Republican</label>
+            <button class="submit" id="submit">submit</button>
+
+            <div class="column hide" id="modal">
+                <div class="content" id="content">
+                    <p class="congrats" id=congrats>
+                       <p> Your grade is:<span id="grade">__</span>
+                    <button class="close" id="close">x</button>
+                </div>
+            </div>
+        </form>
+</body>
+
+</html>

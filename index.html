@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="quizy.js"></script>
+    <title>
+        JavaScript Quiz
+    </title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Helvetica;
+        }
+
+        #main {
+            width: 80%;
+            max-width: 950px;
+            border: 1px gray solid;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        header {
+            margin-top: 0;
+            border: 2px solid black;
+            padding: 5px;
+            height: 250px;
+            background: beige;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            width: 30px;
+            margin-left: 20px;
+        }
+
+        button {
+            width: 150px;
+            margin-top: 20px;
+            border: solid;
+            color: blue;
+        }
+button:hover{color: rgb(0, 255, 213);}
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>JavaScript Quiz</Script>
+            </h1>
+        </div>
+    </div>
+    <h1>World Quiz</h1>
+    <p>
+        Which is the world's best player?
+    </p>
+    <p>Which is the coldest continent in the world?
+    </p>
+    <p>Which is the maker of electric cars
+    </p>
+    <p>Who won the United States election in 2020?</p>
+    
+        <form id="form1"
+         target="_blank">
+            <h2>Who is the world's best player?</h2>
+            <label for="var_string"><input type="radio" name="question1" value="25" id="var_string" />Lionel
+                Messi</label>
+            <label for="var_join"><input type="radio" name="question1" value="0" id="var_join" />Antactica</label>
+            <label for="var_info"><input type="radio" name="question1" value="0" id="var_info" />Tesla</label>
+            <label for="var_condition"><input type="radio" name="question1" id="sub_condition" />Joe Biden</label>
+
+            <h2>Which is the coldest continent in the world?</h2>
+            <label for="sub_string"><input type="radio" name="question2" value="25" id="sub_join" />Antactica</label>
+            <label for="sub_join"><input type="radio" name="question2" value="0" id="sub_info" />Europe</label>
+            <label for="sub_info"><input type="radio" name="question2" value="0" id="sub_info" />Joe Biden</label>
+            <label for="sub_condition"><input type="radio" name="question2" value="0" id="sub_info" />Australia</label>
+
+            <h2>Which is the maker of electric cars?</h2>
+            <label for="cat_string"><input type="radio" name="question3" value="25" id="cat_join" />Tesla</label>
+            <label for="cat_info"><input type="radio" name="question3" value="0" id="cat_info" />Elsa</label>
+            <label for="cat_info"><input type="radio" name="question3" value="0" id="sub_info" />Mc Donald's</label>
+            <label for="cat_codition"><input type="radio" name="question3" value="0"
+                    id="sub_condition" />Domino's</label>
+
+            <h2>Who won the United States Presidential election in 2020?</h2>
+            <label for="cat_string"><input type="radio" name="question4" value="0" id="cat_join" />Elon Musk</label>
+            <label for="cat_info"><input type="radio" name="question4" value="25" id="cat_info" />Joe Biden</label>
+            <label for="cat_info"><input type="radio" name="question4" value="0" id="sub_info" />Mc Donald's</label>
+            <label for="cat_codition"><input type="radio" name="question4" value="0" id="sub_condition" />Mohammadu
+                Buhari</label>
+        
+        <p>Your grade is:<span id="grade">__</span></span></p>
+       <button id="submit">Next</button>
+    </form>
+</body>
+
+</html>
